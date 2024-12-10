@@ -340,7 +340,12 @@ p {
 
 .btn-dark-blue {
   border: none;
-  background: linear-gradient(to right, rgb(154, 65, 255), rgb(50, 214, 255), rgb(0, 255, 149));
+  background: linear-gradient(
+    to right,
+    rgb(154, 65, 255),
+    rgb(50, 214, 255),
+    rgb(0, 255, 149)
+  );
   color: white;
   padding: 7px;
   font-weight: bold;
@@ -352,7 +357,12 @@ p {
 
 .btn-sky-blue {
   border: none;
-  background: linear-gradient(to right, rgb(154, 65, 255), rgb(50, 214, 255), rgb(0, 255, 149));
+  background: linear-gradient(
+    to right,
+    rgb(154, 65, 255),
+    rgb(50, 214, 255),
+    rgb(0, 255, 149)
+  );
   box-shadow: 0px 3px 1px 0px #146a8d;
   color: white;
   padding: 7px;
@@ -584,6 +594,7 @@ p {
 @media (max-width: 991px) {
   #hero {
     /* height: 100vh; */
+    padding-top: 30%;
     text-align: center;
   }
 
@@ -597,6 +608,10 @@ p {
 
   #hero .hero-img img {
     width: 50%;
+  }
+
+  #dao-image {
+    display: none;
   }
 }
 
@@ -666,6 +681,10 @@ p {
   #hero .container {
     padding-top: unset;
   }
+
+  #dao-image {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
@@ -676,6 +695,10 @@ p {
   #hero .btn-get-started {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
+  }
+
+  #dao-image {
+    display: none;
   }
 }
 
