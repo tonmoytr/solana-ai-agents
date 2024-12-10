@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Webpage</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle, #0f2027, #203a43, #2c5364);
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+      }
+
+      h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #1e90ff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      button:hover {
+        background-color: #0f78c9;
+        transform: translateY(-2px);
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      /* Eye-catchy AI-inspired background animation */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("https://source.unsplash.com/1920x1080/?technology,ai")
+          no-repeat center center / cover;
+        opacity: 0.2;
+        z-index: -1;
+        animation: backgroundAnimation 10s infinite alternate ease-in-out;
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          opacity: 0.2;
+        }
+        100% {
+          opacity: 0.4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TBA</h1>
+    <button onclick="goBack()">Back to Home</button>
+
+    <script>
+      function goBack() {
+        window.location.href = "/"; // Replace with the actual home page URL if needed
+      }
+    </script>
+  </body>
+</html>
